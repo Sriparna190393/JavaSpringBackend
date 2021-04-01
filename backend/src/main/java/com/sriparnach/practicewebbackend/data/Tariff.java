@@ -36,15 +36,3 @@ public class Tariff {
 
 }
 
-/*
-curl -X POST \
-  http://localhost:8080/api/tariff/ \
-  -H 'Content-Type: application/json' \
-  -d '{
-	"category":"Luxurious",
-	"modelName":"BMW",
-	"charge":2500.00
-}'
-
-curl -X DELETE http://localhost:8080/api/tariff/606655865ed6de0f4c6e432b
- */

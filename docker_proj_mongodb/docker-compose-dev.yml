@@ -1,0 +1,9 @@
+version: '3'
+services:
+  practice-web-db:
+    platform: linux/x86_64
+    image: mongo:4.2.2
+    environment:
+      MONGO_INITDB_DATABASE: practice-web
+    ports:
+      - 27017:27017

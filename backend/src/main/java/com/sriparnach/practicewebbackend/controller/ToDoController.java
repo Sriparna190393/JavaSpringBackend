@@ -31,8 +31,9 @@ public class ToDoController{
     }
 
     @PutMapping("/{id}")
-    public Tariff update(@RequestBody Tariff tariff){
-        return tariffService.save(tariff);
+    public String update(@RequestBody Tariff tariff){
+        tariffService.save(tariff);
+        return "Record updated in Database";
     }
 
     @DeleteMapping("/{id}")
